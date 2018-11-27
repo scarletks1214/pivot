@@ -1,0 +1,17 @@
+.dropzone {
+  min-height: 150px;
+  outline: 1px dashed #aaa;
+  padding: 15px;
+}
+
+.dropzone.preview img {
+  max-height: 300px;
+}
+
+.dropzone.upload img {
+  min-width: 150px;
+}
+
+.dropzone:hover {
+  background: #eee;
+}

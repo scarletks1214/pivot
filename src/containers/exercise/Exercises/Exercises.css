@@ -1,0 +1,20 @@
+.background-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.workout-plan .card-img-top,
+.workout-program .card-img-top {
+  background-color: #ccc;
+  height: 150px;
+}
+
+.exercise .card-img-top {
+  background-color: #ccc;
+  height: 200px;
+}
+
+.exercise {
+  height: 390px;
+}

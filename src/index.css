@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.workout-plan-timeline .axis {
+  list-style: none;
+  border: 1px solid #ccc;
+}
+
+.workout-plan-timeline .axis .tick {
+  height: 120px;
+  padding: 5px;
+  text-align: right;
+}
+
+.workout-plan-timeline .axis .tick:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.workout-plan-timeline .event {
+  border: 1px solid #aaa;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.workout-plan-timeline .event.rest {
+  background: #ddd;
+}
+
+.workout-plan-timeline .event.rest,
+.workout-plan-timeline .event:not(:last-child) {
+  border-bottom: 0;
+}
+
+.workout-plan-timeline .event.rest.selected,
+.event.set.selected {
+  background: #eca;
+}
+
+.workout-plan-timeline .section {
+  user-select: none;
+  min-height: 200px;
+}
+
+.workout-plan-timeline .section .event:first-child {
+  border-top: 0;
+}
+
+.section-0,
+.section-1 {
+  max-width: 200px;
+}
+
+.workout-plan-timeline .handle {
+  max-width: 50px;
+  color: #aaa;
+}
+
+.workout-plan-timeline .handle i:hover {
+  color: #333;
+}
+
+.event-row > .controls {
+  opacity: 0.1;
+}
+
+.event-row:hover > .controls {
+  opacity: 1;
+}
+
+mark.rbt-highlight-text {
+  padding: 0;
+  background-color: hsl(270, 90%, 70%);
+}
+
+.event.set,
+.event.rest {
+  padding: 10px;
+}
+
+.event > .controls {
+  max-width: 60px;
+  visibility: hidden;
+}
+
+.event:hover > .controls {
+  visibility: visible;
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 56px; /* height of header */
+}
+
+.reorder-grip {
+  display: inline-block;
+  padding: 0.5em 2em;
+  cursor: ns-resize;
+}

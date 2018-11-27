@@ -1,0 +1,39 @@
+.workout-plan-event form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.workout-plan-event {
+  margin: 0.5em 0em;
+}
+
+.workout-plan-event .type {
+  width: 20px;
+  font-weight: bold;
+  background: #ccc;
+}
+
+.workout-plan-event > * {
+  margin-right: 0.5em;
+}
+.workout-plan-event > *:last-child {
+  margin-right: 0;
+}
+.workout-plan-event .duration {
+  margin-right: auto;
+  margin-left: 1em;
+}
+
+.workout-plan-event .exercise-picker {
+  width: 33%;
+}
+.workout-plan-event .input-group-sm.exercise-picker span {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.workout-plan-event .input-group-sm:not(.exercise-picker) {
+  width: 110px;
+}
